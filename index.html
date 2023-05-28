@@ -22,8 +22,7 @@
                 <source srcset="./images/Logo-desktop.png 1x, ./images/Logo-desktop-@2x.png 2x", media="(min-width: 1200px)" type="image/png">
                 <source srcset="./images/Logo-tablet.png 1x, ./images/Logo-tablet-@2x.png 2x" , media="(max-width: 1199px)" type="image/png">
                 <img class="logo" src="./images/Logo-tablet.png" alt="logo">
-            </picture>
-            
+            </picture>            
             <nav class="navigation">
                 <ul class="nav-list">
                     <li>
@@ -52,16 +51,11 @@
                         <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
                     </svg>
                 </span>
-                <!-- Buy now -->
-                <!-- <svg width="12" height="12">
-                    <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
-                </svg> -->
             </button>
             </div>
-
         </div>
     <!-- Mobile menu -->
-        <div>
+        <div class="visuality-hidden">
             <a href="#"><img src="" alt="logo"></a>
             <button type="button">
                 <svg width="32" height="32">
@@ -77,20 +71,46 @@
         </div>
     </header>
     <main>
-        <section>
-            <h1 id="hero">ice cream made with passion</h1>
-            <button type="button">Products</button>
-            <button type="button">How it's made?</button>
-            <img src="" alt="plate of ice-cream">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti, quaerat optio voluptates tempore, iste aliquid consectetur natus necessitatibus dignissimos nihil facilis magni fugiat voluptatum? Laborum quidem reprehenderit enim laboriosam?</p>
-            <button type="button">
+        <section class="hero">
+            <div class="container hero-container">
+                <h1 id="hero">ice cream made with passion</h1>
+                <button type="button">Products</button>
+                <button type="button">How it's made?</button>
+            </div>
+
+            <!-- <img src="" alt="plate of ice-cream"> -->
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti, quaerat optio voluptates tempore, iste aliquid consectetur natus necessitatibus dignissimos nihil facilis magni fugiat voluptatum? Laborum quidem reprehenderit enim laboriosam?</p> -->
+            <!-- <button type="button">
                 <svg width="40" height="16">
                     <use href="/images/sprite.svg#icon-product-arrow"></use>
                 </svg>
-            </button>
-            <img src="" alt="main ice-cream">
-            <p>16 cafes</p>
-            <p>23 food brucks</p>
+            </button> -->
+            <picture class="hero__img-plate">
+                <source srcset="./images/hero-ice-plate.png 1x, ./images/hero-ice-plate-@2x.png 2x" , media="(min-width: 768px)"
+                    type="image/png">
+                <img src="./images/hero-ice-plate.png" alt="plate">
+            </picture>
+            <picture class="hero__img-points">
+                <source srcset="./images/points-desktop.png 1x, ./images/points-desktop-@2x.png 2x" , media="(min-width: 1200px)"
+                    type="image/png">
+                <source srcset="./images/points-tablet.png 1x, ./images/points-tablet-@2x.png 2x" , media="(min-width: 768px)"
+                    type="image/png">
+                <source srcset="./images/points-mobile.png 1x, ./images/points-mobile-@2x.png 2x" , media="(max-width: 767px)"
+                    type="image/png">
+                <img src="./images/points-mobile.png" alt="points">
+            </picture>
+            <picture class="hero__img-ice-cream">
+                <source srcset="./images/hero-desktop.png 1x, ./images/hero-desktop-@2x.png 2x" , media="(min-width: 1200px)"
+                    type="image/png">
+                <source srcset="./images/hero-tablet.png 1x, ./images/hero-tablet-@2x.png 2x" , media="(min-width: 768px)"
+                    type="image/png">
+                <source srcset="./images/hero-mobile.png 1x, ./images/hero-mobile-@2x.png 2x" , media="(max-width: 767px)"
+                    type="image/png">
+                <img src="./images/hero-mobile.png" alt="main ice-cream">
+            </picture>
+
+            <!-- <p>16 cafes</p>
+            <p>23 food brucks</p> -->
         </section>
     <!-- PRODUCTS -->
         <section>
