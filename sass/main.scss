@@ -1,0 +1,30 @@
+// @import url(./utils/_variables.scss);
+// @import url(./utils/_visually-hidden.scss);
+// @import url(./base/_container.scss);
+@import './utils/variables';
+@import './base/commons';
+@import './utils/visually-hidden';
+@import './base/container';
+
+@import './components/main-title';
+@import './components/title';
+@import './components/logo';
+@import './components/modal-btn';
+@import './components/backdrop';
+
+@import './layot/header';
+@import './layot/hero';
+@import './layot/products';
+@import './layot/about';
+@import './layot/advantages';
+@import './layot/gallery';
+@import './layot/customer-reviews';
+@import './layot/contact';
+@import './layot/footer';
+
+@import './modal-window/mobile-menu';
+@import './modal-window/buy-modal';
+@import './modal-window/info-modal';
+@import './modal-window/read-modal';
+@import './modal-window/map-modal';
+@import './modal-window/franchise-modal';
