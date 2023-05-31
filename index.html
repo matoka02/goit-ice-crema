@@ -78,6 +78,26 @@
                 <button type="button">How it's made?</button>
             </div>
 
+            <picture class="hero__img-plate">
+                <source srcset="./images/hero-ice-plate.png 1x, ./images/hero-ice-plate-@2x.png 2x" , media="(min-width: 768px)"
+                    type="image/png">
+                <img src="./images/hero-ice-plate.png" alt="plate">
+            </picture>
+            <picture class="hero__img-points">
+                <!-- <source srcset="./images/points-desktop.png 1x, ./images/points-desktop-@2x.png 2x", media="(min-width: 1200px)" type="image/png"> -->
+                <!-- <source srcset="./images/points-tablet.png 1x, ./images/points-tablet-@2x.png 2x", media="(min-width: 768px)" type="image/png"> -->
+                <!-- <source srcset="./images/points-mobile-480.png 1x, ./images/points-mobile-480-@2x.png 2x", media="(min-width: 480px)" type="image/png"> -->
+                <source srcset="./images/points-mobile-320.png 1x, ./images/points-mobile-320-@2x.png 2x", media="(max-width: 479px)" type="image/png">
+                <img src="./images/points-mobile-320.png" alt="points">
+            </picture>
+            <picture class="hero__img-ice-cream">
+                <!-- <source srcset="./images/hero-desktop.png 1x, ./images/hero-desktop-@2x.png 2x", media="(min-width: 1200px)" type="image/png"> -->
+                <!-- <source srcset="./images/hero-tablet.png 1x, ./images/hero-tablet-@2x.png 2x", media="(min-width: 768px)" type="image/png"> -->
+                <!-- <source srcset="./images/hero-mobile-480.png 1x, ./images/hero-mobile-480-@2x.png 2x", media="(min-width: 480px)" type="image/png"> -->
+                <source srcset="./images/hero-mobile-320.png 1x, ./images/hero-mobile-320-@2x.png 2x", media="(max-width: 479px)" type="image/png">
+                <img src="./images/hero-mobile-320.png" alt="main ice-cream">
+            </picture>
+
             <!-- <img src="" alt="plate of ice-cream"> -->
             <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deleniti, quaerat optio voluptates tempore, iste aliquid consectetur natus necessitatibus dignissimos nihil facilis magni fugiat voluptatum? Laborum quidem reprehenderit enim laboriosam?</p> -->
             <!-- <button type="button">
@@ -85,7 +105,7 @@
                     <use href="/images/sprite.svg#icon-product-arrow"></use>
                 </svg>
             </button> -->
-            <picture class="hero__img-plate">
+            <!-- <picture class="hero__img-plate">
                 <source srcset="./images/hero-ice-plate.png 1x, ./images/hero-ice-plate-@2x.png 2x" , media="(min-width: 768px)"
                     type="image/png">
                 <img src="./images/hero-ice-plate.png" alt="plate">
@@ -95,19 +115,23 @@
                     type="image/png">
                 <source srcset="./images/points-tablet.png 1x, ./images/points-tablet-@2x.png 2x" , media="(min-width: 768px)"
                     type="image/png">
-                <source srcset="./images/points-mobile.png 1x, ./images/points-mobile-@2x.png 2x" , media="(max-width: 767px)"
+                <source srcset="./images/points-mobile-480.png 1x, ./images/points-mobile-480-@2x.png 2x" , media="(min-width: 480px)"
                     type="image/png">
-                <img src="./images/points-mobile.png" alt="points">
+                <source srcset="./images/points-mobile-320.png 1x, ./images/points-mobile-320-@2x.png 2x" , media="(max-width: 479px)"
+                    type="image/png">
+                <img src="./images/points-mobile-320.png" alt="points">
             </picture>
             <picture class="hero__img-ice-cream">
                 <source srcset="./images/hero-desktop.png 1x, ./images/hero-desktop-@2x.png 2x" , media="(min-width: 1200px)"
                     type="image/png">
                 <source srcset="./images/hero-tablet.png 1x, ./images/hero-tablet-@2x.png 2x" , media="(min-width: 768px)"
                     type="image/png">
-                <source srcset="./images/hero-mobile.png 1x, ./images/hero-mobile-@2x.png 2x" , media="(max-width: 767px)"
+                <source srcset="./images/hero-mobile-480.png 1x, ./images/hero-mobile-480-@2x.png 2x" , media="(min-width: 480px)"
                     type="image/png">
-                <img src="./images/hero-mobile.png" alt="main ice-cream">
-            </picture>
+                <source srcset="./images/hero-mobile-320.png 1x, ./images/hero-mobile-320-@2x.png 2x" , media="(max-width: 479px)"
+                    type="image/png">                    
+                <img src="./images/hero-mobile-320.png" alt="main ice-cream">
+            </picture> -->
 
             <!-- <p>16 cafes</p>
             <p>23 food brucks</p> -->
@@ -277,30 +301,46 @@
     </main>
     <footer>
     <!-- FOOTER -->
-        <section>
-            <p>homemade ice cream made</p>
-            <p>with passion</p>
-            <a href="#">
-                <svg width="34" height="34">
-                    <use href="./images/sprite.svg#icon-social-github"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg width="34" height="34">
-                    <use href="./images/sprite.svg#icon-social-telegram"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg width="34" height="34">
-                    <use href="./images/sprite.svg#icon-social-facebook"></use>
-                </svg>
-            </a>
-            <p>
-                Feel free to contact
-                <a href="tel:+">+61 (0) 383 766 284</a>
-            </p>
-            <p>© 2022 - IceCream. All Rights Reserved.</p>
-        </section>
+        <div class="container footer-container">
+            <div class="footer__text-container">
+                <p class="footer__text">homemade ice cream made 
+                    <span>with passion</span>
+                </p>
+                <div class="footer__contacts">
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://github.com/" target="_blank" class="footer__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-social-github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.telegram.org/a/" target="_blank" class="footer__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-social-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-social-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__phone">
+                        Feel free to contact
+                        <a href="tel:+610383766284">+61 (0) 383 766 284</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p>&#169; 2022 - IceCream.</p>
+                <p>&nbsp; All Rights Reserved.</p>
+            </div>        
+        </div>
     </footer>
 
     <!-- Buy now modal -->
