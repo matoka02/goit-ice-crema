@@ -1,5 +1,6 @@
 body {
     font-family: var(--primery-font-family);
+    font-size: 16px;
 }
 
 h1,
@@ -23,6 +24,10 @@ ol {
 img {
     display: block;
     max-width: 100%;
+}
+
+picture{
+    display: block;
 }
 
 ul li {
