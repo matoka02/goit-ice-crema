@@ -71,7 +71,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="visuality-hidden hero">
             <div class="container hero-container">
                 <h1 id="hero">ice cream made with passion</h1>
                 <button type="button">Products</button>
@@ -137,7 +137,7 @@
             <p>23 food brucks</p> -->
         </section>
     <!-- PRODUCTS -->
-        <section>
+        <section class="visuality-hidden">
             <p>100% natural</p>
             <h2 id="products">products</h2>
             <ul>
@@ -174,7 +174,7 @@
             </ul>
         </section>
     <!-- ABOUT -->
-        <section>
+        <section class="visuality-hidden">
             <p>tradition and love</p>
             <h2 id="recipe">how it’s made?</h2>
             <img src="" alt="cow">
@@ -190,7 +190,7 @@
             </button>
         </section>
     <!-- ADVANTAGES -->
-        <section>
+        <section class="visuality-hidden">
             <h2>Advantages</h2>
             <ul>
                 <li>
@@ -223,12 +223,12 @@
             </ul>
         </section>
     <!-- GALLERY  -->
-        <section>
+        <section class="visuality-hidden">
             <img src="" alt="img-slader">
             <img src="" alt="img-slader">
         </section>
     <!-- CUSTOMER REVIEWS  -->
-        <section>
+        <section  class="visuality-hidden">
             <ul>
                 <li>
                     <img src="" alt="Emily">
@@ -250,53 +250,70 @@
             </ul>
         </section>
     <!-- CONTACTS  -->
-        <section>
-            <h2 id="contacts">Contacts</h2>
-            <ul>
-                <li>
-                    <p>Food truck</p>
-                    <p>Chicago</p>
-                    <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-                    <p>Monday - Friday</p>
-                    <p>06:00 AM - 10:00 PM</p>
-                    <p>Saturday - Sunday</p>
-                    <p>08:00 AM - 16:00 PM</p>
-                    <a href="tel:+">+61(0) 383 766 284</a>
-                    <a href="mailto:">noreply@envato.com</a>
-                </li>
-                <li>
-                    <p>cafe</p>
-                    <p>Los Angeles</p>
-                    <p>1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-                    <p>Monday - Friday</p>
-                    <p>06:00 AM - 10:00 PM</p>
-                    <p>Saturday - Sunday</p>
-                    <p>08:00 AM - 16:00 PM</p>
-                    <a href="tel:+">+61(0) 383 766 284</a>
-                    <a href="mailto:">noreply@envato.com</a>
-                </li>
-                <li>
-                    <p>cafe</p>
-                    <p>New York</p>
-                    <p>726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-                    <p>Monday - Friday</p>
-                    <p>06:00 AM - 10:00 PM</p>
-                    <p>Saturday - Sunday</p>
-                    <p>08:00 AM - 16:00 PM</p>
-                    <a href="tel:+">+61(0) 383 766 284</a>
-                    <a href="mailto:">noreply@envato.com</a>
-                </li>
-            </ul>
-            <button type="button">Our Locations
-                <svg width="12" height="12">
-                    <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
-                </svg>
-            </button>
-            <button type="button">Franchise
-                <svg width="12" height="12">
-                    <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
-                </svg>
-            </button>
+        <section class="container contacts">
+            <div class="contacts-container">
+                <div class="container">
+                    <h2 id="contacts" class="visuality-hidden">Contacts</h2>
+                <ul class="contacts-items">
+                    <li class="contacts-item">
+                        <p class="contacts__card">cafe</p> 
+                        <p class="contacts__city">Chicago</p>
+                        <a class="contacts__location" href="#">10340 Ridgeland Ave, Chicago Ridge, IL&nbsp;60415, USA</a>
+                        <!-- <ul class="contacts__grafic"> -->
+                            <!-- <li> -->
+                                <span>Monday - Friday</span>
+                                <time>06:00</time>&nbsp;AM -&nbsp;<time>10:00</time>&nbsp;PM
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <span>Saturday - Sunday</span>
+                                <time>08:00</time>&nbsp;AM -&nbsp;<time>16:00</time>&nbsp;PM
+                            <!-- </li> -->
+                            <!-- <p> <span>Monday - Friday</span><br> <time>06:00</time>&nbsp;AM -&nbsp;<time>10:00</time>&nbsp;PM</p>
+                            <p> <span>Saturday - Sunday</span><br> <time>08:00</time>&nbsp;AM -&nbsp;<time>16:00</time>&nbsp;PM</p> -->
+                        <!-- </ul> -->
+                        <a href="tel:+">+61(0) 383 766 284</a>
+                        <a href="mailto:">noreply@envato.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <p class="contacts__card">food truck</p>
+                        <p class="contacts__city">Los Angeles</p>
+                        <a class="contacts__location" href="#">1003 Manhattan Ave, Manhattan Beach, CA&nbsp;90263, USA</a>
+                        <p>Monday - Friday</p>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>08:00 AM - 16:00 PM</p>
+                        <a href="tel:+">+61(0) 383 766 284</a>
+                        <a href="mailto:">noreply@envato.com</a>
+                    </li>
+                    <li class="contacts-items">
+                        <p class="contacts__card">cafe</p>
+                        <p class="contacts__city">New York</p>
+                        <a class="contacts__location" href="#">726 Sterling Pl, Brooklyn, NY&nbsp;11222, USA</a>
+                        <p>Monday - Friday</p>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>08:00 AM - 16:00 PM</p>
+                        <a href="tel:+">+61(0) 383 766 284</a>
+                        <a href="mailto:">noreply@envato.com</a>
+                    </li>
+                </ul>
+                <div class="contacts-button">
+                    <button type="button">Our Locations
+                        <svg width="12" height="12">
+                            <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
+                        </svg>
+                    </button>
+                    <button type="button">Franchise
+                        <svg width="12" height="12">
+                            <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
+                        </svg>
+                    </button>
+                </div>
+                </div>
+
+
+
+            </div>
         </section>
     </main>
     <footer>
@@ -344,7 +361,7 @@
     </footer>
 
     <!-- Buy now modal -->
-    <div>
+    <div class="visuality-hidden">
         <button type="button">
             <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-clarity_close-line"></use>
@@ -383,7 +400,7 @@
     </div>
 
     <!-- Modal with info about product -->
-    <div>
+    <div class="visuality-hidden">
         <button type="button">
             <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-clarity_close-line"></use>
@@ -430,7 +447,7 @@
     </div>
 
     <!-- Read more modal -->
-    <div>
+    <div class="visuality-hidden">
         <button type="button">
             <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-clarity_close-line"></use>
@@ -446,7 +463,7 @@
     </div>
 
     <!-- Our location modal -->
-    <div>
+    <div class="visuality-hidden">
         <button type="button">
             <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-clarity_close-line"></use>
@@ -459,7 +476,7 @@
     </div>
 
     <!-- Franchise modal -->
-    <div>
+    <div class="visuality-hidden">
         <button type="button">
             <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-clarity_close-line"></use>
