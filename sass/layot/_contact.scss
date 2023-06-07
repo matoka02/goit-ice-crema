@@ -80,7 +80,7 @@
 
 // позволяет наложить поверх 
 .contacts-items, 
-.contacts-button{
+.contacts-container-button{
     position: relative;
     z-index: 1;
 }
@@ -196,7 +196,6 @@
         text-decoration: underline;
     }
 }
-
 
 .contacts__grafic{
     padding: 1.500rem 0;
