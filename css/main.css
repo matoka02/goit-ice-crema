@@ -315,6 +315,85 @@ button:focus {
   z-index: 2;
 }
 
+.reviews {
+  padding-bottom: 3.75rem;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding-bottom: 6.25rem;
+  }
+}
+.reviews-container {
+  background-image: url("../images/Img-mobile.png");
+  background-color: #ffffff;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: repeat-y;
+  position: relative;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .reviews-container {
+    background-image: url("../images/Img-mobile-@2x.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    background-image: url("../images/Img-tablet.png");
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+  .reviews-container {
+    background-image: url("../images/Img-tablet-@2x.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    background-image: url("../images/Img-desktop.png");
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .reviews-container {
+    background-image: url("../images/Img-desktop-@2x.png");
+  }
+}
+.container.reviews {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.reviews-container::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 10%;
+  width: 100%;
+  background-color: var(--background-color-teme-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-container::after {
+    height: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews-container::after {
+    height: 10%;
+  }
+}
+.itc-slider {
+  position: relative;
+  z-index: 1;
+}
+
 .contacts {
   padding-bottom: 3.75rem;
   border: none;
@@ -336,7 +415,7 @@ button:focus {
   background-color: #ffffff;
   background-position-x: center;
   background-position-y: bottom;
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
   position: relative;
 }
@@ -391,7 +470,7 @@ button:focus {
   }
 }
 .contacts-items,
-.contacts-button {
+.contacts-container-button {
   position: relative;
   z-index: 1;
 }
