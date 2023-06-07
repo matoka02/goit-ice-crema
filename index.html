@@ -13,6 +13,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/itc-slider.css">
 </head>
 <body>
     <header class="page-header">
@@ -255,32 +256,61 @@
             <img src="" alt="img-slader">
         </section>
         <!-- CUSTOMER REVIEWS  -->
-        <section class="visuality-hidden">
-            <ul>
-                <li>
-                    <img src="" alt="Emily">
-                    <p>I love visiting your cafe. You prepare the most delicious
-                        ice cream in Los Angeles! In addition, you have
-                        beautiful
-                        serving, cozy atmosphere and polite staff.</p>
-                    <p>Emily, Los Angeles</p>
-                </li>
-                <li>
-                    <img src="" alt="Bryan">
-                    <p>Every day we come to you with friends after classes in
-                        college. We love your ice cream and casual atmosphere!
-                    </p>
-                    <p>Bryan, New-York</p>
-                </li>
-                <li>
-                    <img src="" alt="Diana">
-                    <p>Ice cream is my passion! I love your chocolate hazelnut
-                        ice cream! And I really like the excellent service -
-                        always
-                        served politely and quickly!</p>
-                    <p>Diana, Chicago</p>
-                </li>
-            </ul>
+        <section class="container reviews">
+            <div class="reviews-container">
+                <img src="" alt="ice-cream">
+
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                        <div class="itc-slider-item">
+                            <!-- Контент 1 слайда -->
+                            <img src="" alt="Emily">
+                            <p>I love visiting your cafe. You prepare the most delicious
+                                ice cream in Los Angeles! In addition, you have
+                                beautiful
+                                serving, cozy atmosphere and polite staff.</p>
+                            <p>Emily, Los Angeles</p>
+                        </div>
+                        <div class="itc-slider-item">
+                            <!-- Контент 2 слайда -->
+                            <img src="" alt="Bryan">
+                            <p>Every day we come to you with friends after classes in
+                                college. We love your ice cream and casual atmosphere!
+                            </p>
+                            <p>Bryan, New-York</p>
+                        </div>
+                        <div class="itc-slider-item">
+                            <!-- Контент 3 слайда -->
+                            <img src="" alt="Diana">
+                            <p>Ice cream is my passion! I love your chocolate hazelnut
+                                ice cream! And I really like the excellent service -
+                                always
+                                served politely and quickly!</p>
+                            <p>Diana, Chicago</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <!-- <button class="itc-slider-btn itc-slider-btn-prev"></button> -->
+                    <!-- <button class="itc-slider-btn itc-slider-btn-next"></button> -->
+                    
+                    <ol class="itc-slider-indicators">
+                        <!-- data-slide-to="0" – для перехода к 1 слайду -->
+                        <li class="itc-slider-indicator" data-slide-to="0"></li>
+                        <!-- data-slide-to="1" – для перехода к 2 слайду -->
+                        <li class="itc-slider-indicator" data-slide-to="1"></li>
+                        <!-- data-slide-to="2" – для перехода к 3 слайду -->
+                        <li class="itc-slider-indicator" data-slide-to="2"></li>
+                    </ol>                  
+                </div>
+
+
+
+
+         
+            </div>
+
         </section>
         <!-- CONTACTS  -->
         <section class="container contacts">
@@ -367,7 +397,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="contacts-button">
+                    <div class="contacts-container-button">
                         <button class="contacts-btn__location" type="button">
                             <span>Our Locations
                                 <svg width="12" height="12">
@@ -387,17 +417,6 @@
                             </span> 
                         </button>
                     </div>
-
-                    <!-- <button class="header-btn" type="button">
-                        <span>Buy now
-                            <svg width="12" height="12">
-                                <use
-                                    href="./images/sprite.svg#icon-button-arrow-buy">
-                                </use>
-                            </svg>
-                        </span>
-                    </button> -->
-
                 </div>
             </div>
         </section>
@@ -598,6 +617,8 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script src="./js/itc-slider.js" defer></script>
 </body>
 </html>
 
