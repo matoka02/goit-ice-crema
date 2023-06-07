@@ -1,0 +1,282 @@
+.contacts{
+    padding-bottom: 3.750rem;
+    border: none;
+    background-color: var(--background-color-teme-dark);
+}
+@media screen and (min-width: 768px){
+    .contacts{
+        padding-bottom: 3.250rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contacts {
+        padding-bottom: 7.500rem;
+    }
+}
+
+.contacts-container{
+    background-image:  url('../images/Img-mobile.png');  
+    background-color: #ffffff;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: relative;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contacts-container{
+    background-image: url('../images/Img-mobile-@2x.png');  
+    }
+}
+@media screen and (min-width: 768px) {
+    .contacts-container{
+    background-image: url('../images/Img-tablet.png');  
+    // background-size: contain;
+    }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+    .contacts-container{
+    background-image: url('../images/Img-tablet-@2x.png');  
+    // background-size: contain;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contacts-container{
+    background-image: url('../images/Img-desktop.png');  
+    // background-size: contain;
+    }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+    .contacts-container{
+    background-image: url('../images/Img-desktop-@2x.png');  
+    // background-size: contain;
+    }
+}
+
+// позволяет сбросить padding у .container и отцентрировать .contacts
+.container.contacts{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contacts-container::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 75%;
+    width: 100%;
+    background-color: var(--background-color-teme-dark);
+}
+@media screen and (min-width: 768px){
+    .contacts-container::after{
+        height: 50%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contacts-container::after{
+        height: 80%;
+    }
+}
+
+// позволяет наложить поверх 
+.contacts-items, 
+.contacts-button{
+    position: relative;
+    z-index: 1;
+}
+
+// рахмеры карточек
+// 280-280-224-368 - width
+// 412-412-537-542 - height
+// 16-16-0-0 - column
+// 0-0-16-32 - row
+
+.contacts-items {
+    display: grid;
+    grid-template-columns: 280px;
+    justify-content: center;
+    grid-template-rows: repeat(3, 412px);
+    // grid-auto-flow: column;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+@media screen and (min-width: 768px){
+    .contacts-items{
+        grid-template-columns: repeat(3, 224px);
+        grid-template-rows: 536px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contacts-items{
+        grid-template-columns: repeat(3, 368px);
+        grid-template-rows: 542px;
+        grid-column-gap: 2rem;
+    }
+}
+
+.contacts-items>li{
+    // 40-32-24-32
+    padding: 2.500rem 2rem 1.500rem 2rem;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.750rem;
+    // line-height: 186%;
+
+    color: var(--secondary-text-color-teme-light);
+    background: var(--secondary-text-color-teme-dark);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 1.5rem;
+}
+@media screen and (min-width: 768px){
+    .contacts-items>li{
+        font-size: 0.875rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contacts-items>li{
+        font-size: 1rem;
+    }
+}
+
+.contacts__card{
+    padding: 0.250rem 1.375rem;
+    display: inline-block;
+
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    background-color: var(--third-text-color-teme-dark);
+    border-radius: 0.250rem;
+}
+@media screen and (min-width: 768px){
+    .contacts__card{
+        padding: 0.250rem 0.875rem;
+
+        font-size: 1rem;
+    }
+}
+
+.contacts__location{
+    padding: 0.500rem 0 1.500rem 0;
+    position: relative; 
+
+    &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #E1E1E1;
+    }   
+}
+@media screen and (min-width: 768px){
+    .contacts__location{
+        padding: 2rem 0;
+    }
+}
+.contacts__location>span{
+    margin-bottom: 0.500rem;
+    display: block;
+
+    line-height: 1.86;    
+    letter-spacing: 0.04em;
+}
+
+.contacts__location>a{
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    
+    color: #D6936D;
+
+    &:hover,  &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+.contacts__grafic{
+    padding: 1.500rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.500rem;
+    position: relative;
+
+    line-height: 1.86;
+
+    &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #E1E1E1;
+    }
+}
+@media screen and (min-width: 768px){
+    .contacts__grafic{
+        padding: 2rem 0;
+    }
+}
+
+.contacts__grafic>p{
+    display: block;
+
+    line-height: 1.86;
+    color: #ABABAB;
+}
+.contacts__grafic>p>span{
+    line-height: 1.86;
+    color: var(--secondary-text-color-teme-light);
+}
+
+.contacts__links{
+    padding-top: 1.500rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+
+    line-height: 1.6;
+    text-decoration: none;
+}
+@media screen and (min-width: 768px){
+    .contacts__links{
+        padding-top: 2rem;
+    }
+}
+
+.contacts__links>a{
+    color: var(--secondary-text-color-teme-light);
+}
+
+.contacts-container-button{
+    padding-top: 1.250rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+@media screen and (min-width: 768px){
+    .contacts-container-button{
+        padding-top: 2.500rem;
+
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contacts-container-button{
+        padding-top: 3.750rem;
+    }
+}
+
+    // .contacts-btn__location, .contacts-btn__franchize
+    // look button styles in file _buttons.scss
+
+
+
