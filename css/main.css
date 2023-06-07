@@ -167,7 +167,8 @@ button:focus {
   background-color: var(--disabled-button-color-teme);
 }
 
-.contacts-btn__location > span {
+.contacts-btn__location > span,
+.contacts-btn__franchize > span {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -386,7 +387,7 @@ button:focus {
 }
 @media screen and (min-width: 1200px) {
   .contacts-container::after {
-    height: 70%;
+    height: 80%;
   }
 }
 .contacts-items,
@@ -542,7 +543,7 @@ button:focus {
   color: var(--secondary-text-color-teme-light);
 }
 
-.contacts-button {
+.contacts-container-button {
   padding-top: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -551,14 +552,14 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-button {
+  .contacts-container-button {
     padding-top: 2.5rem;
     flex-direction: row;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-button {
+  .contacts-container-button {
     padding-top: 3.75rem;
   }
 }
