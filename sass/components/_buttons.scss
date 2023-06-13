@@ -39,6 +39,7 @@
     gap: 0.250rem;
 }
 
+
 // CONTACTS
 
 .contacts-btn__location {
@@ -75,7 +76,8 @@
     }
 }
 
-.contacts-btn__location>span {
+.contacts-btn__location>span,
+.contacts-btn__franchize>span {
     display: flex;
     align-items: center;
     gap: 0.250rem;

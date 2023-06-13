@@ -1,0 +1,103 @@
+.gallery{
+    box-sizing: border-box;
+}
+
+
+// позволяет сбросить padding у .container и отцентрировать .contacts
+.container.gallery{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gallery-container{
+    // height: 400px;
+    background-image:  url('../images/Img-mobile.png');  
+    background-color: #ffffff;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: relative;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .gallery-container{
+    background-image: url('../images/Img-mobile-@2x.png');  
+    }
+}
+@media screen and (min-width: 768px) {
+    .gallery-container{
+    background-image: url('../images/Img-tablet.png');  
+    // background-size: contain;
+    }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+    .gallery-container{
+    background-image: url('../images/Img-tablet-@2x.png');  
+    // background-size: contain;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .gallery-container{
+    background-image: url('../images/Img-desktop.png');  
+    // background-size: contain;
+    }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+    .gallery-container{
+    background-image: url('../images/Img-desktop-@2x.png');  
+    // background-size: contain;
+    }
+}
+
+.gallery-container::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 25%;
+    width: 100%;
+    background-color: var(--background-color-teme-dark);
+}
+@media screen and (min-width: 768px){
+    .gallery-container::after{
+        height: 50%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .gallery-container::after{
+        height: 25%;
+    }
+}
+
+.gallery-slider{
+    margin: auto auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.500rem;
+    // background-image: ;
+
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 130px;
+
+    animation-name: changeBgImage;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes changeBgImage {
+    0% {
+        background-image: url('../images/slider/ingridients-001.jpg');
+    }
+  
+    50% {
+        background-image: url('../images/slider/ingridients-002.jpg') ;
+    }
+  
+    100% {
+        background-image: url('../images/slider/ingridients-003.jpg') ;
+    }
+  }
