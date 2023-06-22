@@ -144,7 +144,9 @@ img {
     line-height: 1.76
 } */
 
-.title-label {
+/* _TITLE */
+
+/* .title-label {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -183,7 +185,7 @@ img {
     .title {
         font-size: 3.6rem
     }
-}
+} */
 
 /* _COMMONS */
 
@@ -1167,7 +1169,9 @@ screen and (min-width:1200px) and (min-resolution:2x) {
     }
 }
 
-.products {
+/* _PRODACTS */
+
+/* .products {
     background-color: #fff;
     background-image: url(backgr-mob-@1x.a3c987e7.png);
     background-position: 50%;
@@ -1597,7 +1601,7 @@ screen and (min-resolution:2x) {
     .products__item--brown:after {
         background-image: url(desk-milkshake@2x-min.d801d46e.png)
     }
-}
+} */
 
 .about {
     color: #fcfcfc;
