@@ -1,19 +1,19 @@
 .page-header {
     z-index: 10;
     width: 100%;
-    padding: 0.750rem 0;
+    padding: 1.200rem 0;
     position: absolute;
     top: 0;
     left: 0;
 }
 @media screen and (min-width:768px) {
     .page-header {
-        padding: 1.250rem 0;
+        padding: 20px 0;
     }
 }
 @media screen and (min-width:1200px) {
     .page-header {
-        padding: 1.125rem 0;
+        padding: 18px 0;
     }
 }
 
@@ -37,7 +37,7 @@
 
 .nav-list {
     display: flex;
-    gap: 1.750rem;
+    gap: 28px;
 }
 
 .nav-list>li>a {
@@ -48,7 +48,7 @@
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.600rem;
     line-height: 1.25;
 
     color: var(--secondary-text-color-teme-dark);
@@ -62,7 +62,7 @@
 .header-container__buttons {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
     // margin-left: auto;
 }
 
@@ -74,7 +74,7 @@
 .btn--buy {
     display: flex;
     align-items: center;
-    gap: 0.500rem;
+    gap: 8px;
 
     line-height: 1.21429;
 }
