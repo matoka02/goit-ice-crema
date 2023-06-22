@@ -1986,9 +1986,10 @@ screen and (min-resolution:2x) {
 } */
 
 
+/* _GALLERY */
 
 
-.gallery__list {
+/* .gallery__list {
     background-color: #fcfcfc;
     border-radius: 7.5px;
     position: relative;
@@ -2070,7 +2071,7 @@ screen and (min-width:321px) and (min-resolution:2x) {
     .gallery-reviews-wrapper {
         min-height: 1122px;
         background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url(tb-bg@1x.8ec1bab1.png)
-            /***css-loader:: can't load recource***/
+
         ;
         background-size: contain
     }
@@ -2081,7 +2082,7 @@ screen and (width:768px) and (min-resolution:192dpi),
 screen and (width:768px) and (min-resolution:2x) {
     .gallery-reviews-wrapper {
         background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url(tb-bg@2x.bf174d83.png)
-            /***css-loader:: can't load recource***/
+
     }
 }
 
@@ -2105,7 +2106,7 @@ screen and (min-width:769px) and (min-resolution:2x) {
     .gallery-reviews-wrapper {
         min-height: 1110px;
         background-image: linear-gradient(#84a278, #84a278 95px, rgba(0, 0, 0, 0) 95px), url(dt-bg@1x.13b06418.png)
-            /***css-loader:: can't load recource***/
+
         ;
         background-size: contain
     }
@@ -2116,7 +2117,6 @@ screen and (width:1200px) and (min-resolution:192dpi),
 screen and (width:1200px) and (min-resolution:2x) {
     .gallery-reviews-wrapper {
         background-image: linear-gradient(#84a278, #84a278 95px, rgba(0, 0, 0, 0) 95px), url(dt-bg@2x.d1b110ab.png)
-            /***css-loader:: can't load recource***/
     }
 }
 
@@ -2134,7 +2134,11 @@ screen and (min-width:1201px) and (min-resolution:2x) {
     .gallery-reviews-wrapper {
         background-image: linear-gradient(#84a278, #84a278 95px, rgba(0, 0, 0, 0) 95px), url(screen-bg@2x.5fbfe8da.png)
     }
-}
+} */
+
+
+
+
 
 .customer-reviews {
     text-align: center;
@@ -2242,7 +2246,9 @@ screen and (min-width:1201px) and (min-resolution:2x) {
     height: auto
 }
 
-.contacts {
+/* _CONTACTS */
+
+/* .contacts {
     padding-top: 1028px;
     padding-bottom: 40px;
     position: relative
@@ -2501,7 +2507,10 @@ screen and (min-width:1201px) and (min-resolution:2x) {
 
 .contacts_btn-icon {
     fill: currentColor
-}
+} */
+
+
+
 
 .modal__locations-container {
     flex-direction: column;

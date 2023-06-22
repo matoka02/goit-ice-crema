@@ -261,6 +261,23 @@ button:focus {
     filter: drop-shadow(0 0 10px var(--primery-text-color-teme-dark));
   }
 }
+@keyframes gallery {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .page-header {
   z-index: 10;
   width: 100%;
@@ -1236,213 +1253,153 @@ button:focus {
     font-size: 1.6rem;
   }
 }
-.container.reviews {
-  padding-left: 0;
-  padding-right: 0;
+/*  START common styles for gallery and customer-reviews */
+.gallery-reviews-wrapper {
+  min-height: 1072px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primery-text-color-teme-dark);
 }
 
-.reviews-container {
-  padding-top: 5rem;
-  padding-bottom: 3.75rem;
-  background-image: url("../images/Img-mobile.png");
-  background-color: #ffffff;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: cover;
-  background-repeat: repeat-y;
+@media screen and (max-width: 320px) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 24px, rgba(0, 0, 0, 0) 24px), url("../images/Img-mobile-@1x.png");
+  }
+}
+@media screen and (max-width: 320px) and (min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi), screen and (max-width: 320px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 24px, rgba(0, 0, 0, 0) 24px), url("../images/Img-mobile-@2x.png");
+  }
+}
+@media screen and (min-width: 321px) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 24px, rgba(0, 0, 0, 0) 24px), url("../images/Img-tablet-@1x.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 321px) and (min-device-pixel-ratio: 2), screen and (min-width: 321px) and (min-resolution: 192dpi), screen and (min-width: 321px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 24px, rgba(0, 0, 0, 0) 24px), url("../images/Img-tablet-@2x.png");
+  }
+}
+@media screen and (width: 768px) {
+  .gallery-reviews-wrapper {
+    min-height: 1122px;
+    background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url("../images/Img-tablet-@1x.png");
+    background-size: contain;
+  }
+}
+@media screen and (width: 768px) and (min-device-pixel-ratio: 2), screen and (width: 768px) and (min-resolution: 192dpi), screen and (width: 768px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url("../images/Img-tablet-@2x.png");
+  }
+}
+@media screen and (min-width: 769px) {
+  .gallery-reviews-wrapper {
+    min-height: 1122px;
+    background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url("../images/Img-desktop-@1x.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 164px, rgba(0, 0, 0, 0) 164px), url("../images/Img-desktop-@2x.png");
+  }
+}
+@media screen and (width: 1200px) {
+  .gallery-reviews-wrapper {
+    min-height: 1110px;
+    background-image: linear-gradient(#84a278, #84a278 96px, rgba(0, 0, 0, 0) 96px), url("../images/Img-desktop-@1x.png");
+    background-size: contain;
+  }
+}
+@media screen and (width: 1200px) and (min-device-pixel-ratio: 2), screen and (width: 1200px) and (min-resolution: 192dpi), screen and (width: 1200px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 96px, rgba(0, 0, 0, 0) 96px), url("../images/Img-desktop-@2x.png");
+  }
+}
+@media screen and (min-width: 1201px) {
+  .gallery-reviews-wrapper {
+    min-height: 1110px;
+    background-image: linear-gradient(#84a278, #84a278 96px, rgba(0, 0, 0, 0) 95px), url("../images/Img-desktop-@1x.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1201px) and (min-device-pixel-ratio: 2), screen and (min-width: 1201px) and (min-resolution: 192dpi), screen and (min-width: 1201px) and (min-resolution: 2x) {
+  .gallery-reviews-wrapper {
+    background-image: linear-gradient(#84a278, #84a278 96px, rgba(0, 0, 0, 0) 95px), url("../images/Img-desktop-@2x.png");
+  }
+}
+/*  END common styles for gallery and customer-reviews */
+.gallery__list {
   position: relative;
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .reviews-container {
-    background-image: url("../images/Img-mobile-@2x.png");
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews-container {
-    padding-top: 6.25rem;
-    padding-bottom: 5rem;
-    background-image: url("../images/Img-tablet.png");
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
-  .reviews-container {
-    background-image: url("../images/Img-tablet-@2x.png");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .reviews-container {
-    padding-top: 8.75rem;
-    padding-bottom: 6.25rem;
-    background-image: url("../images/Img-desktop.png");
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .reviews-container {
-    background-image: url("../images/Img-desktop-@2x.png");
-  }
-}
-.reviews-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reviews__picture {
-  margin: 0 auto;
   overflow: hidden;
-  border-radius: 50%;
-}
-
-.reviews__text {
-  max-width: 280px;
-  min-height: 256px;
-  padding: 2rem 2.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 0.625rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.55;
-  text-align: center;
-  color: var(--secondary-text-color-teme-dark);
-  background-color: var(--background-color-teme-dark);
+  border-radius: 0.75rem;
+  background-color: var(--secondary-text-color-teme-dark);
 }
 
 @media screen and (min-width: 768px) {
-  .reviews__text {
-    padding: 1.75rem 5rem;
-    border-radius: 1.5rem;
-    max-width: 704px;
-    min-height: 138px;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.86;
+  .gallery__list {
+    border-radius: 1.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews__text {
-    padding: 2.625rem 4.5rem;
-    max-width: 968px;
-    font-size: 1rem;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+  .gallery__list {
+    max-width: 1013px;
+    border-radius: 2.4rem;
+    margin: 0 auto;
   }
 }
-.reviews__name {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.86;
-  text-align: center;
-  color: var(--secondary-text-color-teme-light);
-}
-
-@media screen and (min-width: 768px) {
-  .reviews__name {
-    font-size: 1rem;
-  }
-}
-.reviews-indicators {
-  padding-top: 0.375rem;
-}
-
-@media screen and (min-width: 768px) {
-  .reviews-indicators {
-    padding-top: 2rem;
-  }
-}
-.contacts {
-  padding-bottom: 3.75rem;
-  border: none;
-  background-color: var(--background-color-teme-dark);
-}
-
-@media screen and (min-width: 768px) {
-  .contacts {
-    padding-bottom: 3.25rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    padding-bottom: 7.5rem;
-  }
-}
-.contacts-container {
-  background-image: url("../images/Img-mobile.png");
-  background-color: #ffffff;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: cover;
-  background-repeat: repeat-y;
-  position: relative;
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .contacts-container {
-    background-image: url("../images/Img-mobile-@2x.png");
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts-container {
-    background-image: url("../images/Img-tablet.png");
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
-  .contacts-container {
-    background-image: url("../images/Img-tablet-@2x.png");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts-container {
-    background-image: url("../images/Img-desktop.png");
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
-  .contacts-container {
-    background-image: url("../images/Img-desktop-@2x.png");
-  }
-}
-.container.contacts {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.contacts-container::after {
+.gallery__item:nth-child(n+2) {
   position: absolute;
-  content: "";
-  bottom: 0;
-  height: 75%;
-  width: 100%;
-  background-color: var(--background-color-teme-dark);
+  top: 0;
 }
 
+.gallery__item {
+  animation-name: gallery;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.gallery__item:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.gallery__item:first-child {
+  animation-delay: 10s;
+}
+
+.contacts {
+  padding-top: 1028px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .contacts {
+    padding-top: 962px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .contacts-container::after {
-    height: 50%;
+  .contacts {
+    padding-top: 284px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-container::after {
-    height: 80%;
+  .contacts {
+    padding-top: 506px;
+    padding-bottom: 120px;
   }
 }
-.contacts-items,
-.contacts-container-button {
-  position: relative;
-  z-index: 1;
-}
-
 .contacts-items {
   display: grid;
   grid-template-columns: 280px;
   justify-content: center;
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 1rem;
+  grid-column-gap: 1.6rem;
   grid-row-gap: 1rem;
 }
 
@@ -1583,26 +1540,6 @@ button:focus {
   color: var(--secondary-text-color-teme-light);
 }
 
-.contacts-container-button {
-  padding-top: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts-container-button {
-    padding-top: 2.5rem;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts-container-button {
-    padding-top: 3.75rem;
-  }
-}
 .footer-container {
   display: flex;
   flex-direction: column;
