@@ -121,87 +121,61 @@
                 </ul>
             </div>
         </section>
+        <!-- ABOUT -->
         <section id="about" class="about">
             <div class="container">
-                <p class="about__title-label title-label">tradition and love
-                </p>
+                <p class="about__title-label title-label">tradition and love</p>
                 <h2 class="about__title title">how it’s made?</h2>
                 <div class="about__content">
-                    <div class="about__image-wrap"> <img class="about__image"
-                            srcset="/cow-279.1cd28c33.jpg 279w, /cow-335.609ec878.jpg 335w, /cow-490.a6146cf9.jpg 490w, /cow-557.401921f7.jpg 557w, /cow-670.85a28952.jpg 670w, /cow-980.5ebfba0d.jpg 980w"
-                            sizes="(min-width: 1200px) 490px, (min-width: 768px) 335px, (min-width: 320px) 279px, 100vw"
-                            src="/cow-279.1cd28c33.jpg" alt="Cow"> </div>
-                    <div class="about__btn-text-wrap">
-                        <div class="about__text-wrap">
-                            <p class="about__paragraph"> Ice is a place
-                                where you will become not only a little
-                                happier, but also healthier. Health is the
-                                main value for us, and we follow it when
-                                creating our handmade desserts. </p>
-                            <p class="about__paragraph"> We use traditional
-                                recipes and 100% natural ingredients. Our
-                                products are so natural that they can be
-                                given to children from the age of three
-                                years. Sweets lovers can expect 55 types of
-                                ice cream, 15 types of coffee and 23
-                                milkshakes. </p>
-                            <p class="about__paragraph"> This is enough to
-                                choose ice cream and coffee for any mood!
-                            </p>
-                        </div> <button type="button"
-                            class="about__btn btn btn--primary"
-                            data-modal-open="more"> Read more <svg
-                                class="about__icon-button-arrow" width="12"
-                                height="12">
-                                <use
-                                    href="/icons.3047fb95.svg#icon-button-arrow">
-                                </use>
-                            </svg> </button>
+                    <div class="about__image-wrap"> 
+                        <picture class="about__image">
+                            <source
+                                srcset="./images/about/tradition-desktop-@1x.jpg 1x 670w, ./images/about/tradition-desktop-@2x.jpg 2x 980w", media="(min-width: 1200px)" type="image/jpg">
+                            <source
+                                srcset="./images/about/tradition-tablet-@1x.jpg 1x 490w, ./images/about/tradition-tablet-@2x.jpg 2x 557w", media="(min-width: 768px)" type="image/jpg">
+                            <source
+                                srcset="./images/about/tradition-mobile-@1x.jpg 1x 279w, ./images/about/tradition-mobile-@2x.jpg 2x 335w", media="(max-width: 767px)" type="image/jpg">    
+                            <img src="./images/about/tradition-mobile-@1x.jpg" alt="Cow">
+                        </picture>
+                    </div>
+                    <div class="about__text">
+                        <div>
+                            <p class="about__paragraph"> Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
+                            <p class="about__paragraph"> We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. </p>
+                            <p class="about__paragraph"> This is enough to choose ice cream and coffee for any mood!</p>
+                        </div> 
+                        <button type="button" class="about__btn btn btn--primary" data-modal-open="more"> Read more 
+                            <svg class="about__icon-button-arrow" width="12" height="12">
+                                <use href="./images/sprite.svg#icon-button-arrow-buy"></use>
+                            </svg> 
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- ADVANTAGES -->        
         <section id="advantages" class="advantages">
             <div class="container">
                 <h2 class="visually-hidden">Advantages</h2>
                 <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <div class="advantages__icon"> <svg
-                                class="advantages__icon-item" width="36"
-                                height="36">
-                                <use href="/icons.3047fb95.svg#icon-cow">
-                                </use>
-                            </svg> </div>
+                    <li class="advantages__item advantages__item--volume">
                         <p class="advantages__subtitle title-label">721</p>
-                        <p class="advantages__text"> Aliquam ac dui vel dui
-                            vulputate consectetur. Mauris massa. </p>
+                        <p class="advantages__text"> Aliquam ac dui vel dui vulputate consectetur. Mauris massa. </p>
                     </li>
-                    <li class="advantages__item">
-                        <div class="advantages__icon"> <svg
-                                class="advantages__icon-item" width="36"
-                                height="36">
-                                <use href="/icons.3047fb95.svg#icon-weight">
-                                </use>
-                            </svg> </div>
+                    <li class="advantages__item advantages__item--weight">
                         <p class="advantages__subtitle title-label">16kg</p>
-                        <p class="advantages__text"> Aliquam ac dui vel dui
-                            vulputate consectetur. Mauris massa. </p>
+                        <p class="advantages__text"> Aliquam ac dui vel dui vulputate consectetur. Mauris massa. </p>
                     </li>
-                    <li class="advantages__item">
-                        <div class="advantages__icon"> <svg
-                                class="advantages__icon-item" width="36"
-                                height="36">
-                                <use href="/icons.3047fb95.svg#icon-ice-crema">
-                                </use>
-                            </svg> </div>
+                    <li class="advantages__item advantages__item--sort">
                         <p class="advantages__subtitle title-label">84</p>
-                        <p class="advantages__text"> Aliquam ac dui vel dui
-                            vulputate consectetur. Mauris massa. </p>
+                        <p class="advantages__text"> Aliquam ac dui vel dui vulputate consectetur. Mauris massa. </p>
                     </li>
                 </ul>
             </div>
         </section>
+
         <div class="gallery-reviews-wrapper">
+        <!-- GALLERY  -->            
             <section id="gallery" class="gallery">
                 <div class="container">
                     <h2 class="visually-hidden">Photo gallery</h2>
