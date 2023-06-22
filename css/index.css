@@ -1603,7 +1603,9 @@ screen and (min-resolution:2x) {
     }
 } */
 
-.about {
+/* _ABOUT */
+
+/* .about {
     color: #fcfcfc;
     padding-top: 60px
 }
@@ -1785,7 +1787,10 @@ screen and (min-resolution:2x) {
     align-items: center;
     gap: 5px;
     display: flex
-}
+} */
+
+
+
 
 .about-modal__title {
     margin-bottom: 20px
@@ -1855,7 +1860,9 @@ screen and (min-resolution:2x) {
     }
 }
 
-.advantages {
+/* _ADVANTAGES */
+
+/* .advantages {
     color: #fcfcfc;
     letter-spacing: 0;
     padding-top: 42px;
@@ -1976,7 +1983,10 @@ screen and (min-resolution:2x) {
         margin: 0 auto;
         font-size: 1.6rem
     }
-}
+} */
+
+
+
 
 .gallery__list {
     background-color: #fcfcfc;
