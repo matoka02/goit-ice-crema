@@ -7,11 +7,11 @@
     background-color: var(--background-color-teme-dark);
 }
 .footer__text {
-    max-width: 14.5rem;
+    max-width: 232px;
 
     font-style: normal;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.800rem;
     line-height: 1.2;
     text-transform: uppercase;
     word-wrap: break-word;
@@ -20,23 +20,23 @@
 }
 //16-8-14
 .footer__text span {
-    margin-top: 1rem;
-    max-width: 12.5rem;
+    margin-top: 1.600rem;
+    max-width: 200px;
 
     display: block;
 
     font-style: normal;
     font-weight: 700;
-    font-size: 2.125rem;
+    font-size: 3.400rem;
     line-height: 1.2;
     letter-spacing: 0.04em;
 }
 .footer__links {
-    margin-top: 3.750rem;
+    margin-top: 6rem;
 
     display: flex;
     justify-content: flex-end;
-    gap: 1.250rem;
+    gap: 2rem;
 }
 .footer__link{
     width: 34px;
@@ -56,12 +56,12 @@
         }
     }
 .footer__phone {
-    margin-top: 1.250rem;
-    margin-bottom: 2.500rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 
     font-style: normal;
     font-weight: 700;
-    font-size: 0.750rem;
+    font-size: 1.200rem;
     line-height: 1.86;
     text-align: right;
 
@@ -72,10 +72,10 @@
 }
 
 .footer__right {
-    padding-top: 1.250rem;
-    padding-bottom: 1.250rem;
-    margin-left: -1.250rem;
-    margin-right: -1.250rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
 
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1.400rem;
     line-height: 1.52;
     text-align: center;
 
@@ -104,31 +104,31 @@
         align-items: center;
     }
     .footer__text {
-        max-width: 22rem;
+        max-width: 352px;
 
-        font-size: 1.625rem;
+        font-size: 2.600rem;
         line-height: 1.23;
         letter-spacing: 0.04em;
     }
     .footer__text span {
-        max-width: 22rem;
-        margin-top: 0.5rem;
+        max-width: 352px;
+        margin-top: 0.800rem;
 
-        font-size: 3rem;
+        font-size: 4.800rem;
         line-height: 1.23;
         letter-spacing: 0.06em;
     }
     .footer__links {
-        gap: 1.875rem;
+        gap: 3rem;
     }
     .footer__phone {
-        margin-top: 2.125rem;
+        margin-top: 3.400rem;
 
-        font-size: 0.875rem;
+        font-size: 1.400rem;
     }
     .footer__right {
-        margin-left: -2rem;
-        margin-right: -2rem;
+        margin-left: -3.200rem;
+        margin-right: -3.200rem;
 
         flex-direction: row;
     }
@@ -142,26 +142,26 @@
         align-items: flex-end;
     }
     .footer__text {
-        max-width: 32.5rem;
+        max-width: 520px;
 
-        font-size: 1.875rem;
+        font-size: 3rem;
         line-height: 1.23;
         word-wrap: normal;
     }
     .footer__text span {
-        margin-top: 0.875rem;
-        max-width: 32.5rem;
-        margin-bottom: 3.750rem;
+        margin-top: 1.400rem;
+        max-width: 520px;
+        margin-bottom: 6rem;
 
-        font-size: 3.625rem;
+        font-size: 5.800rem;
     }
     .footer__links{
         margin-top: 0;
     }
     .footer__phone {
-        margin-top: 2.500rem;
-        margin-bottom: 3.750rem;
-        font-size: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        font-size: 1.600rem;
         letter-spacing: 0.02em;
     }
     .footer__right {
