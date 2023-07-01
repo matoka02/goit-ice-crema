@@ -2643,6 +2643,8 @@ html {
     }
 }
 
+/* _FOOTER */
+/* 
 .footer {
     padding-bottom: 62px;
     position: relative
@@ -2866,7 +2868,9 @@ html {
     .footer__copyright {
         font-size: 1.2rem
     }
-}
+} */
+
+
 
 .arrow-up {
     z-index: 1000;
